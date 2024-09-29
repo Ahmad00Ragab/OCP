@@ -118,10 +118,29 @@ public class App
         str15.insert(15,", ragab");   // name is : ahmad, ragab
         System.out.println(str15);    
 
+        StringBuilder str16 = new StringBuilder("ahmad haroun");
+        str16.delete(6, 7);
+        System.out.println(str16);              // ahmad aroun
+        str16.replace(5, 15, "");
+        System.out.println(str16);
+        System.out.println(str16.length());
+        
+        StringBuilder str17 = new StringBuilder("ABC");
+        System.out.println(str17.reverse());
 
+        var x = "ahmad";
+        var y = "ahmad ".trim();
+        System.out.println(x.equals(y));
 
+        StringBuilder str18 = new StringBuilder("ali");
+        StringBuilder str19 = str18;
+        str19.append(",mohamed");
+        System.out.println(str18); // ali, mohamed
+        System.out.println(str19); // ali, mohamed 
+        System.out.println(str18 == str19); // true 
 
-
+        /* ========= String pool ========== */
+        
         
         System.out.println("======================================================");
         System.out.println("======================================================");

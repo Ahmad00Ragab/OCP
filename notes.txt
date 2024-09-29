@@ -38,8 +38,19 @@ without the backslash all these characters will be written as t,s,n and " or ' h
 - Using StringBuilder Class:
 StringBuilder is mutable which means that the original object is modified and return an ref to its object 
 methods:
-1.  length() ==> StringBuilder str = "ahmad"; system.out.println(str.length());
-2.  chaAt()  ==> char str.charAt(specific_index); // takes the index and returns the char
-3.  indexOf()  ==> int str.indexOf(specific_char); // takes the char and returns the index 
-4.  substring() ==> String str.substring(startIndex, endIndex)
-5.  append() ==> StringBuilder str.append(); --> append not only character or string but also different data types
+1. length() ==> StringBuilder str = "ahmad"; system.out.println(str.length());
+2. chaAt()  ==> char str.charAt(specific_index); // takes the index and returns the char
+3. indexOf()  ==> int str.indexOf(specific_char); // takes the char and returns the index 
+4. substring() ==> String str.substring(startIndex, endIndex)
+5. append() ==> StringBuilder str.append() --> append not only character or string but also different data types
+6. insert() ==> StringBuilder str.insert()  
+7. delete() ==> StringBuilder str.delete()
+8. deleteCharAt() ==> StringBuilder str.deleteCharAt(specific_index)
+9. replace() ==> StringBuilder str.replace(startIndex, endIndex, "newString")
+10. reverse() ==> StringBuilder str.reverse()
+
+- String pool: also known as intern pool, it is a location in the JVM that collects all the repeated strings in the code 
+when we declare a string as String str = "ahmad", it is registered in the string pool,
+and when we declare another string as String str2 = "ahmad"; ==> now, no need to create 
+another object for str2 and make this ref variable str2 points to the same of object of str
+
