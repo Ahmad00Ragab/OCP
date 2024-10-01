@@ -3,6 +3,8 @@ package com.example;
 import java.text.ListFormat.Style;
 
 import javax.sound.midi.SysexMessage;
+import java.util.Arrays;
+import jakarta.faces.event.SystemEvent;
 
 public class App 
 {
@@ -139,9 +141,64 @@ public class App
         System.out.println(str19); // ali, mohamed 
         System.out.println(str18 == str19); // true 
 
-        /* ========= String pool ========== */
+
+        System.out.println("---------------------");
         
+        // Arrays
+        int[] arr = {1,2,3};
+
+        for(int i = 0; i < arr.length; i++){
+            System.out.println(arr[i]);
+        }
+
+
+
+
+        int arr2[], arr3 = 5;
+
+        arr2 = new int[3];
+
+        arr2[1] = 1;
+        System.out.println(arr2[0]);
+        System.out.println(arr2[1]);    
+        System.out.println(arr3);
+
+        // Array of Objects 
+        String[] stringArr1 = {"one","two","three"};
+        String[] stringArr2 = stringArr1;
         
+        System.out.println(stringArr1 == stringArr2);
+        System.out.println(stringArr1.equals(stringArr2));
+
+
+        // Soring an array 
+        int[] arrNum = {15,69,3,45,0,-6,97,13};
+        System.out.println("Before Sorting: ");
+        System.out.println(Arrays.toString(arrNum));
+        Arrays.sort(arrNum);
+        System.out.println("After Sorting: ");
+        System.out.println(Arrays.toString(arrNum));
+
+        // Search in an array 
+        System.out.println(Arrays.binarySearch(arrNum,0)); // array must be sorted before searching 
+        System.out.println(Arrays.binarySearch(arrNum,5)); // array must be sorted before searching 
+        
+        // Comparing arrays
+        int[] arrCompare1 = {1,25,6};
+        int[] arrCompare2 = {5,9,8};
+
+        System.out.println(Arrays.compare(arrCompare1, arrCompare2));
+        
+
+
+
+
+
+
+
+
+
+
         System.out.println("======================================================");
         System.out.println("======================================================");
         System.out.println("======================================================");
