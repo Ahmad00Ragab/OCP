@@ -1,56 +1,23 @@
-Strings : 
-1. you need to remember that a string is a sequence of characters
-and Java counts from 0 when indexed.
-2. String is immutable and unchangeable, calling a method on a string, changes the string
-and returns different String object containing the changes.
+Methods :
+
+// method declaration 
+public final void doNothing(int param){
+    // body
+}
 
 
-String methods;
-1.  length() ==> String str = "ahmad"; system.out.println(str.length());
-2.  chaAt()  ==> char str.charAt(specific_index); // takes the index and returns the char
-3.  indexOf()  ==> int str.indexOf(specific_char); // takes the char and returns the index 
-4.  substring() ==> String str.substring(startIndex, endIndex)
-5.  toLowerCase() ==>String str.toLowerCase();
-6.  toUpperCase() ==>String  str.toUpperCase();
-7.  equals() ==> boolean str.equals(Object obj) // applied for checking equality to any objects not only string 
-8.  equalsIgnoreCase() ==>boolean str.equalsIgnoreCase(String str) // applied only on Strings 
-9.  startsWith() ==> boolean str.startsWith(String s)
-10. endsWith() ==> boolean str.endsWith(String s)
-11. contains() ==> boolean str.contains(CharSquence chS)
-12. replace()  ==> String str.replace(Char oldChar, char newChar);
-13. replace() ==> String str.replace(CharSquence oldChs, CharSquence newChs);   
-14. trim() ==> String str.trim() ==> removes the whitespaces from start and end
-15  strip() ==> String str.strip() ==> removes the whitespaces from start and end
-16. isEmpty() ==> boolean str.isEmpty() ==> " "  : not empty 
-17. isBlank() ==> boolean str.isBlank() ==> " "  :blank but not empty
+what are the access specifiers applied on the Method?
+1. public 
+2. protected
+3. private
+4. package-priavte (default)
 
+what are the optional specifiers?
+Must appear before the return type 
+1. static
+2. final 
+3. abstract
+4. default
+5. synchronized
 
-
-- Escape characters: backslash + specific_char => specific behavior
-1. \t ==> tab
-2. \s ==> space
-3. \n ==> newline
-4. \" ==> double quote
-5. \' ==> single quote 
-without the backslash all these characters will be written as t,s,n and " or ' have special meanings 
-
-
-- Using StringBuilder Class:
-StringBuilder is mutable which means that the original object is modified and return an ref to its object 
-methods:
-1. length() ==> StringBuilder str = "ahmad"; system.out.println(str.length());
-2. chaAt()  ==> char str.charAt(specific_index); // takes the index and returns the char
-3. indexOf()  ==> int str.indexOf(specific_char); // takes the char and returns the index 
-4. substring() ==> String str.substring(startIndex, endIndex)
-5. append() ==> StringBuilder str.append() --> append not only character or string but also different data types
-6. insert() ==> StringBuilder str.insert()  
-7. delete() ==> StringBuilder str.delete()
-8. deleteCharAt() ==> StringBuilder str.deleteCharAt(specific_index)
-9. replace() ==> StringBuilder str.replace(startIndex, endIndex, "newString")
-10. reverse() ==> StringBuilder str.reverse()
-
-- String pool: also known as intern pool, it is a location in the JVM that collects all the repeated strings in the code 
-when we declare a string as String str = "ahmad", it is registered in the string pool,
-and when we declare another string as String str2 = "ahmad"; ==> now, no need to create 
-another object for str2 and make this ref variable str2 points to the same of object of str
 
