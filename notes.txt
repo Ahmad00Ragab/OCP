@@ -41,3 +41,15 @@ non-static methods can access both static and non-static class members.
 
 passing parameters:
 Note : java is a "pass-by-value" language 
+
+what is the CharSequence ?
+it is an interface that the String class implments it 
+
+important note : instance members is allowed to call the static members but the class members are not 
+allowed to call the instance members.
+
+note : the only optional specifier that can be applied on the local variable is : final  and final local variables
+must be initialized at declaration or before they are used.
+
+note : 'final' keyword doesn't come with 'abstract' keyword
+
