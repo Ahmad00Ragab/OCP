@@ -12,6 +12,7 @@ what are the access specifiers applied on the Method?
 3. private
 4. package-priavte (default)
 
+
 what are the optional specifiers?
 Must appear before the return type 
 1. static
@@ -21,3 +22,22 @@ Must appear before the return type
 5. synchronized
 
 
+how to write a method to throw an exception?
+you write the exception in the method signature using throws keyword and then write the 
+try-catch block to catch the exception when the method is called.
+
+
+what is the rule of declaring a final variale inside a method?
+the rule says: this is final variable can not be used before assiging it a value.
+
+if the class member (field or method) is declared as protected, can i access it from a subclass that is belongs to another package?
+yes, but through the instance of the child or subclass not the direct access of the parent reference.
+
+Static memebers:
+
+what does the static and non-static methods can access?
+static methods can access only staic class members (fields and methods)
+non-static methods can access both static and non-static class members.
+
+passing parameters:
+Note : java is a "pass-by-value" language 
