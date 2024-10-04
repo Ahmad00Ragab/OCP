@@ -1,17 +1,16 @@
 package com.example;
 
 import java.io.IOException;
-import java.lang.Thread.State;
-import java.util.Arrays;
-
+import java.time.LocalDateTime;
+import java.util.*;
 import com.example2.Parent;
 
 
-class Snake{
 
+
+class Snake{
     static int staticSnakeField = 10;   
 }
-
 
 
 class Snake2{
@@ -31,6 +30,8 @@ class Snake2{
 
 }
 
+
+
 class Class1{
     
     static int x;
@@ -38,6 +39,7 @@ class Class1{
         x = 10;
     }
 }
+
 
 public class App extends Parent{
     
@@ -71,16 +73,26 @@ public class App extends Parent{
     }
 
 
-
     public static int addTickets(int tickets) {
         tickets++;
         return tickets;
     }
 
+
     public static String addGuests(String guests) {
         guests += "d";
         return guests;
     }
+
+
+    public void fly(String str){
+        System.out.println("String");
+    }
+
+    public void fly(Object obj){
+        System.out.println("Object");
+    }
+
 
 
     public static void main( String[] args )
@@ -169,11 +181,24 @@ public class App extends Parent{
 
 
 
-        
         /* AutoBoxing and Unoboxing */
         Integer variable1 = 5; // autoboxing 
         int variable12 = variable1; // unboxing 
+
+
+
+        System.out.println("----------------");
+        var p = new App();
+        p.fly("test");
+        System.out.println("_");
+        p.fly(56); 
+
+        /* Arrays.asList() */
+        List<Integer> list = Arrays.asList(5);
+        System.out.println(list);
         
+
+        System.out.println(LocalDateTime.now());
 
 
         System.out.println("======================================================");
